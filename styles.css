@@ -1,0 +1,20 @@
+/*font-family: 'Besley', serif;
+font-family: 'Kaisei HarunoUmi', serif;*/
+
+h1 {
+  font-family: "Besley", serif;
+  font-weight: 700;
+  background-color: coral;
+}
+
+p {
+  font-family: "Kaisei HarunoUmi", serif;
+  font-size: 22px;
+  color: crimson;
+}
+
+.fa-instagram {
+  font-size: 30px;
+  margin-top: 20px;
+  color: rgb(204, 110, 129);
+}
