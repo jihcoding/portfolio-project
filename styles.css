@@ -1,20 +1,57 @@
-/*font-family: 'Besley', serif;
-font-family: 'Kaisei HarunoUmi', serif;*/
+:root {
+    --branding-color: #f5e1da;
+    --secondary-color: #e6a4b4;
+    --primary-font-family: "Kaisei HarunoUmi", serif;
+    --secondary-font-family: 'Besley', serif; 
+}
+
+body {
+    font-family: var(--secondary-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font-family);
+  font-weight: bold;
+}
 
 h1 {
-  font-family: "Besley", serif;
-  font-weight: 700;
-  background-color: coral;
+  font-size: 96px;
 }
 
 p {
-  font-family: "Kaisei HarunoUmi", serif;
-  font-size: 22px;
-  color: crimson;
+  font-family: var(--secondary-font-family);
+  font-weight: normal;
 }
 
-.fa-instagram {
-  font-size: 30px;
-  margin-top: 20px;
-  color: rgb(204, 110, 129);
+.hero {
+  background: var(--branding-color);
+  text-align: center;
+  padding: 160px 0;
+  color: #5c636e;
+}
+
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero h2 {
+    font-family: var(--primary-font-family);
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 2;
+}
+
+.btn-branding {
+  background: var(--secondary-color);
+  border-radius: 15px;
+  color: #5c636e;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
