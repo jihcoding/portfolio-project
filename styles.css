@@ -1,12 +1,12 @@
 :root {
-    --branding-color: #f5e1da;
-    --secondary-color: #e6a4b4;
-    --primary-font-family: "Kaisei HarunoUmi", serif;
-    --secondary-font-family: 'Besley', serif; 
+  --branding-color: #f5e1da;
+  --secondary-color: #e6a4b4;
+  --primary-font-family: "Kaisei HarunoUmi", serif;
+  --secondary-font-family: "Besley", serif;
 }
 
 body {
-    font-family: var(--secondary-font-family);
+  font-family: var(--secondary-font-family);
 }
 
 h1,
@@ -41,7 +41,7 @@ p {
 }
 
 .hero h2 {
-    font-family: var(--primary-font-family);
+  font-family: var(--primary-font-family);
   font-weight: normal;
   font-size: 24px;
   line-height: 2;
@@ -55,3 +55,16 @@ p {
   line-height: 27px;
   padding: 15px 30px;
 }
+
+.header-center {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.hr-header-center {
+  width: 9%;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid var(--secondary-color);
+}
+
