@@ -1,6 +1,7 @@
 :root {
   --branding-color: #f5e1da;
   --secondary-color: #e6a4b4;
+  --third-party-color: #5c636e;
   --primary-font-family: "Kaisei HarunoUmi", serif;
   --secondary-font-family: "Besley", serif;
 }
@@ -32,7 +33,7 @@ p {
   background: var(--branding-color);
   text-align: center;
   padding: 160px 0;
-  color: #5c636e;
+  color: var(--third-party-color);
 }
 
 .hero p {
@@ -50,7 +51,7 @@ p {
 .btn-branding {
   background: var(--secondary-color);
   border-radius: 15px;
-  color: #5c636e;
+  color: var(--third-party-color);
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
@@ -68,3 +69,54 @@ p {
   border: 1px solid var(--secondary-color);
 }
 
+.gallery {
+  margin: 25px auto;
+  padding: 10px 0;
+}
+
+.gallery a {
+  text-decoration: none;
+}
+
+.description {
+  margin: 20px auto;
+  font-family: var(--secondary-font-family);
+}
+
+.description h4 {
+  color: var(--third-party-color);
+  font-size: 20px;
+}
+
+.description p {
+  font-size: 15px;
+  color: var(--third-party-color);
+}
+
+footer .contact {
+  background: var(--branding-color);
+  border-radius: 10px;
+  margin-top: 100px;
+  padding: 35px 50px;
+}
+
+footer h4 {
+  font-size: 47px;
+}
+
+.social-links a {
+  margin: 30px 25px;
+  margin-top: 60px;
+  background: var(--secondary-color);
+  color: var(--branding-color);
+  padding: 11px 14px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.source {
+  text-align: center;
+  font-size: 14px;
+  margin: 16px;
+  margin-top: 40px;
+}
