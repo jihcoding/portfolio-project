@@ -3,6 +3,7 @@
   --secondary-color: #d1a5c3;
   --primary-font-family: "Kaisei HarunoUmi", serif;
   --secondary-font-family: "Besley", serif;
+  --box-shadow: 0 5px 10px rgba(112, 106, 106, 0.3);
 }
 
 body {
@@ -24,7 +25,7 @@ h6 {
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 80px;
   line-height: 1.5;
 }
 
@@ -39,7 +40,8 @@ p {
 .hero {
   background: var(--branding-color);
   text-align: center;
-  padding: 50px 0;
+  padding: 50px;
+  line-height: 1.5;
   color: #5a6160;
 }
 
@@ -51,7 +53,7 @@ p {
 .hero h2 {
   font-family: var(--primary-font-family);
   font-weight: normal;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.5;
 }
 
@@ -59,9 +61,10 @@ p {
   background: var(--secondary-color);
   border-radius: 15px;
   color: white;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 20px 30px;
+  font-size: 20px;
+  font-family: var(--secondary-font-family);
+  padding: 18px 20px;
+  box-shadow: var(--box-shadow);
 }
 
 .header-center {
@@ -82,43 +85,47 @@ p {
   padding: 15px 30px;
   font-size: 18px;
   line-height: 27px;
+  font-family: var(--secondary-font-family);
   color: var(--secondary-color);
 }
 
 .feature-project {
-    padding-top: 25px;
+  padding-top: 25px;
 }
 
 .feature-project img {
-   max-width: 500px;
-   padding: 10px;
-   margin-left: 80px;
+  max-width: 500px;
+  padding: 10px;
+  margin-left: 80px;
 }
 
 .project-description {
-  padding: 25px 17px;
+  padding: 7px 58px;
 }
 /* Footer Section*/
 
 footer .contact {
   background: var(--branding-color);
   border-radius: 10px;
-  margin-top: 100px;
-  padding: 35px 50px;
+  margin-top: 71px;
+  padding: 28px 72px;
 }
 
 footer h4 {
   font-size: 47px;
 }
 
+.connect-links {
+  margin-top: 30px;
+}
+
 .social-links a {
   margin: 30px 25px;
-  margin-top: 60px;
   background: var(--secondary-color);
   color: white;
-  padding: 11px 14px;
-  font-size: 20px;
-  border-radius: 50%;
+  padding: 8px 14px;
+  font-size: 25px;
+  border-radius: 30%;
 }
 
 .source {
@@ -144,13 +151,9 @@ footer h4 {
   background-color: var(--branding-color);
 }
 
-.about-me-section {
-  margin-top: 40px;
-}
-
 .bio-section {
-  margin: 20px;
-  padding: 30px;
+  padding: 30px 40px;
+  margin-top: 70px;
 }
 
 .bio-section h1 {
@@ -163,26 +166,35 @@ footer h4 {
   border: 2px solid var(--secondary-color);
 }
 
-.profile-picture {
-  border-radius: 10px;
-  max-width: 350px;
-  margin: 100px;
-  padding: 30px;
+.bio-section img {
+  border-radius: 50px;
+  max-width: 400px;
+  padding: 40px 30px;
+  margin-left: 34px;
+}
+
+.bio-content {
+  padding: 10px;
+  margin-left: 80px;
 }
 
 /* MEDIA */
 @media (max-width: 900px) {
-.hero h1 {
+  .hero h1, .bio-section h1 {
     font-size: 45px;
-}
-.hero h2 {
+  }
+  .hero h2 {
     font-size: 20px;
-}
-.hero {
+  }
+  .hero {
     padding: 70px 20px;
-}
-  .project-description {
-    padding: 0;
+  }
+  .project-description,
+  .bio-section {
     text-align: center;
+  }
+  .bio-content {
+    padding: 0;
+    margin-left: 0;
   }
 }
