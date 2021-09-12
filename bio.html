@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Project</title>
+    <title>Bio Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,7 +36,7 @@
             src="/images/logo.png"
             alt="Jih-logo"
             class="logo"
-            title="Homepage"
+            title="Bio Page"
           />
         </a>
         <button
@@ -53,15 +53,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html"
-                >Home.</a
+              <a class="nav-link" aria-current="page" href="/index.html"
+                >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/bio.html">Bio</a>
+              <a class="nav-link active" aria-current="page" href="#">Bio.</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/work.html">Work</a>
+              <a class="nav-link" aria-current="page" href="work.html">Work</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="/contact.html"
@@ -72,84 +72,56 @@
         </div>
       </div>
     </nav>
-    <div class="hero">
-      <p>👋🏻 Hello, I am</p>
-      <h1>Argielyn Lapid</h1>
-      <h2 class="mb-5">Front-end developer based in Sweden.</h2>
-      <a href="/contact.html" class="btn btn-branding">Explore more</a>
+
+    <!---- Overlay ----->
+
+    <div class="container-wrapper main-container">
+      <div class="opaque-overlay">&nbsp;</div>
     </div>
-    <div class="container header-center">
-      <div class="row">
-        <hr class="mb-4 hr-header-center" />
-        <h3 class="mb-4">SOME OF MY LATEST WORK</h3>
-        <hr class="mb-4 hr-header-center" />
-      </div>
-    </div>
-    <div class="container feature-project">
-      <div class="row mb-5">
-        <div class="col d-none d-lg-block">
-          <img
-            src="/images/crystalbottle.png"
-            class="img-fluid"
-            alt="Crystal Bottle"
-          />
-        </div>
-        <div class="col">
-          <div class="project-description">
-            <h3>Crystal Bottle Project</h3>
-            <p class="mb-5 text-muted">Side Project</p>
-            <p class="mb-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptas 
-              quisquam eos facere accusantium accusamus fugiat, consectetur dolores 
-              reiciendis ullam libero, in saepe illo iure molestias fugit mollitia aperiam ea.
+
+    <!---- About me Section ----->
+    <div class="container about-me-section">
+      <div class="row bio-section">
+        <div class="col-6">
+          <div class="bio-section-content">
+            <h1 class="mb-2">About Argielyn</h1>
+            <hr class="mb-5 hr-bio" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+              enim ea incidunt praesentium perspiciatis soluta voluptatem odio
+              quo non. Saepe sunt, quidem ab facere doloribus error accusantium
+              repellat est! Id? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Labore enim non accusantium beatae veniam error.
+              Minima voluptates magni, natus quod dignissimos aliquid excepturi
+              quam iste fugiat, maxime commodi dolores inventore?
             </p>
-            <a href="#" class="btn btn-branding-outline">Find out more >> </a>
+            <br />
+            <p class="mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+              enim ea incidunt praesentium perspiciatis soluta voluptatem odio
+              quo non. Saepe sunt, quidem ab facere doloribus error accusantium
+              repellat est! Id? Lorem ipsum dolor sit amet consectetur
+              Minima voluptates magni, natus quod dignissimos aliquid excepturi
+              quam iste fugiat, maxime commodi dolores inventore?
+            </p>
+
+            <a href="/work.html" class="btn btn-branding mb-4">
+              View my projects
+            </a>
           </div>
         </div>
-      </div>
-      <div class="row mb-5">
-        <div class="col d-none d-lg-block">
+
+        <div class="col-6">
           <img
-            src="/images/portfolio.png"
-            class="img-fluid"
-            alt="Portfolio Project"
+            src="/images/profile.jpg"
+            alt="personal-photo"
+            class="profile-picture img-fluid shadow d-none d-lg-flex mt-4"
           />
-        </div>
-        <div class="col">
-          <div class="project-description">
-            <h3>App Launch</h3>
-            <p class="mb-5 text-muted">Responsive Page</p>
-            <p class="mb-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptas 
-              quisquam eos facere accusantium accusamus fugiat, consectetur dolores 
-              reiciendis ullam libero, in saepe illo iure molestias fugit mollitia aperiam ea.
-            </p>
-            <a href="#" class="btn btn-branding-outline">Find out more >> </a>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-5">
-        <div class="col d-none d-lg-block">
-          <img
-            src="/images/weather.png"
-            class="img-fluid"
-            alt="Weather App"
-          />
-        </div>
-        <div class="col">
-          <div class="project-description">
-            <h3>Weather Forecast</h3>
-            <p class="mb-5 text-muted">Weather App</p>
-            <p class="mb-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptas 
-              quisquam eos facere accusantium accusamus fugiat, consectetur dolores 
-              reiciendis ullam libero, in saepe illo iure molestias fugit mollitia aperiam ea.
-            </p>
-            <a href="#" class="btn btn-branding-outline">Find out more >> </a>
-          </div>
         </div>
       </div>
     </div>
+
+    <!----- Footer ----->
     <footer>
       <div class="contact d-flex justify-content-between d-lg-flex d-none">
         <div>
@@ -160,6 +132,7 @@
           <a href="#" class="btn btn-branding mt-3">Say Hello!</a>
         </div>
       </div>
+
       <div class="social-links d-flex justify-content-center">
         <a
           href="mailto:jihcoding@gmail.com"
