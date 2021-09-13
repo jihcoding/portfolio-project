@@ -64,7 +64,12 @@
               <a class="nav-link" aria-current="page" href="/work.html">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/contact.html">Contact.</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/contact.html"
+                >Contact.</a
+              >
             </li>
           </ul>
         </div>
@@ -77,19 +82,63 @@
       <div class="opaque-overlay">&nbsp;</div>
     </div>
 
+    <div class="container contact">
+      <div class="row mb-5">
+        <div class="col">
+          <h1>Contact Info</h1>
+          <hr class="contact-hr" />
+        </div>
+        <div class="col-sm-3 contact-details">
+          <h4 class="mb-4">Say Hello!</h4>
+          <a href="mailto:jihconding@gmail.com">jihcoding@gmail.com</a>
+          <p>+0123456789</p>
+        </div>
+        <div class="col-sm-3 contact-details">
+          <h4 class="mb-4">Stop By</h4>
+          <p>
+            Northmill 23A,
+            <br />
+            123 44 Stockholm
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container form-control-box">
+      <div class="row">
+        <div class="col-sm-5">
+          <form>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Name/Company"
+              />
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Email" />
+            </div>
+            <div class="form-group">
+              <label for="message"></label>
+              <textarea
+                class="form-control mb-3"
+                id="message"
+                placeholder="Message"
+                rows="7"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-branding-form" title="Message send button">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <!----- Footer ----->
 
     <footer>
-      <div class="contact d-flex justify-content-between d-lg-flex d-none">
-        <div>
-          <p class="text-muted">Got something in mind?</p>
-          <h4>LET'S MAKE IT HAPPEN!</h4>
-        </div>
-        <div>
-          <a href="#" class="btn btn-branding mt-3">Say Hello!</a>
-        </div>
+      <div class="d-flex justify-content-center connect-links">
+        <h2 class="text-muted">Let's get in touch!</h2>
       </div>
-
       <div class="social-links d-flex justify-content-center">
         <a
           href="mailto:jihcoding@gmail.com"
@@ -98,10 +147,18 @@
         >
           <i class="far fa-envelope" aria-hidden="true"></i>
         </a>
-        <a href="https://www.linkedin.com/in/argielyn-lapid-997565b5/" target="_blank" title="LinkedIn Profile">
+        <a
+          href="https://www.linkedin.com/in/argielyn-lapid-997565b5/"
+          target="_blank"
+          title="LinkedIn Profile"
+        >
           <i class="fab fa-linkedin" aria-hidden="true"></i>
         </a>
-        <a href="https://github.com/jihcoding" target="_blank" title="Github Profile">
+        <a
+          href="https://github.com/jihcoding"
+          target="_blank"
+          title="Github Profile"
+        >
           <i class="fab fa-github" aria-hidden="true"></i>
         </a>
       </div>
