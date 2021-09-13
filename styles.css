@@ -1,9 +1,14 @@
 :root {
-  --branding-color: rgba(197, 134, 134, 0.432);
-  --secondary-color: #d1a5c3;
-  --primary-font-family: "Kaisei HarunoUmi", serif;
-  --secondary-font-family: "Besley", serif;
+  --font-color: rgba(27, 25, 25, 0.667);
+  --branding-color: linear-gradient(
+    to bottom,
+    rgba(235, 206, 128, 0.52),
+    rgba(199, 87, 171, 0.73)
+  );
+  --secondary-color: #b470a2;
   --box-shadow: 0 5px 10px rgba(112, 106, 106, 0.3);
+  --primary-font-family: "Besley", serif;
+  --secondary-font-family: "Kaisei HarunoUmi", serif;
 }
 
 body {
@@ -22,6 +27,7 @@ h5,
 h6 {
   font-family: var(--primary-font-family);
   font-weight: bold;
+  color: var(--font-color);
 }
 
 h1 {
@@ -33,16 +39,16 @@ p {
   font-family: var(--secondary-font-family);
   font-weight: normal;
   font-size: 16px;
+  color: var(--font-color);
 }
 
-/* Hero Section (HOMEPAGE)*/
+/*     HOMEPAGE     */
 
 .hero {
   background: var(--branding-color);
   text-align: center;
   padding: 50px;
   line-height: 1.5;
-  color: #5a6160;
 }
 
 .hero p {
@@ -59,12 +65,17 @@ p {
 
 .btn-branding {
   background: var(--secondary-color);
-  border-radius: 15px;
   color: white;
+  border-radius: 15px;
   font-size: 20px;
   font-family: var(--secondary-font-family);
   padding: 18px 20px;
   box-shadow: var(--box-shadow);
+  transition: ease-in-out;
+}
+
+.btn-branding:hover {
+  background-color: rgb(153, 96, 153);
 }
 
 .header-center {
@@ -73,10 +84,9 @@ p {
 }
 
 .hr-header-center {
-  width: 9%;
-  display: block;
+  width: 12%;
   margin: 0 auto;
-  border: 2px solid var(--secondary-color);
+  border-top: 4px solid var(--secondary-color);
 }
 
 .btn-branding-outline {
@@ -89,26 +99,27 @@ p {
   color: var(--secondary-color);
 }
 
-.feature-project {
-  padding-top: 25px;
+.project-example {
+  padding: 36px 23px;
 }
 
-.feature-project img {
-  max-width: 500px;
-  padding: 10px;
-  margin-left: 80px;
+.project-example img {
+  padding: 10px 58px;
 }
 
-.project-description {
-  padding: 7px 58px;
+.project-example a {
+  text-decoration: none;
 }
-/* Footer Section*/
+
+/*       FOOTER SECTION    */
 
 footer .contact {
   background: var(--branding-color);
   border-radius: 10px;
   margin-top: 71px;
+  margin: 55px;
   padding: 28px 72px;
+  color: var(--font-color);
 }
 
 footer h4 {
@@ -116,7 +127,7 @@ footer h4 {
 }
 
 .connect-links {
-  margin-top: 30px;
+  margin-top: 55px;
 }
 
 .social-links a {
@@ -134,11 +145,12 @@ footer h4 {
   margin-top: 40px;
 }
 
-/* Bio Page */
+/*       BiO PAGE       */
 
 .main-container {
   height: 65vh;
-  background: url("../images/background.png") no-repeat center fixed;
+  background: var(--branding-color),
+    url("../images/background.png") no-repeat center fixed;
   display: flex;
   align-items: center;
   position: relative;
@@ -163,7 +175,7 @@ footer h4 {
 .hr-bio {
   width: 40%;
   display: block;
-  border: 2px solid var(--secondary-color);
+  border-top: 4px solid var(--secondary-color);
 }
 
 .bio-section img {
@@ -178,9 +190,80 @@ footer h4 {
   margin-left: 80px;
 }
 
-/* MEDIA */
+/*      Work Page     */
+
+.work-section {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.work-section h1 {
+  font-size: 50px;
+  font-family: var(--primary-font-family);
+}
+
+.hr-work-section {
+  width: 10%;
+  margin: 0 auto;
+  border-top: 4px solid var(--secondary-color);
+}
+
+.my-project {
+  padding-top: 20px;
+}
+
+.my-project img {
+  padding: 15px 79px;
+}
+
+.project-description {
+  padding: 0 6px;
+  margin-top: 25px;
+}
+
+.fa-long-arrow-alt-right {
+  font-size: 40px;
+  color: var(--secondary-color);
+}
+
+/*        CONTACT PAGE       */
+.contact {
+  padding-top: 55px;
+}
+
+.contact h1 {
+  font-size: 55px;
+}
+
+.contact hr {
+  width: 40%;
+  display: block;
+  border-top: 4px solid var(--secondary-color);
+}
+
+.contact-details {
+  padding: 20px 33px;
+}
+
+.form-control-box {
+  margin-top: 90px;
+  margin-bottom: 30px;
+  padding-bottom: 80px;
+}
+
+.btn-branding-form {
+  background: var(--secondary-color);
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 15px 45px;
+}
+
+/*       MEDIA RESPONSIVE SECTION      */
+
 @media (max-width: 900px) {
-  .hero h1, .bio-section h1 {
+  .hero h1,
+  .bio-section h1 {
     font-size: 45px;
   }
   .hero h2 {
