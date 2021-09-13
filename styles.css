@@ -227,12 +227,13 @@ footer h4 {
 }
 
 /*        CONTACT PAGE       */
+
 .contact {
   padding-top: 55px;
 }
 
-.contact h1 {
-  font-size: 55px;
+.contact h2 {
+  font-size: 50px;
 }
 
 .contact hr {
@@ -263,15 +264,25 @@ footer h4 {
 
 @media (max-width: 900px) {
   .hero h1,
-  .bio-section h1 {
-    font-size: 45px;
+  .bio-section h1,
+  .contact h2,
+  .work-section h1 {
+    font-size: 40px;
   }
+
+  .bio-section {
+    padding: 15px;
+    margin-top: 35px;
+  }
+
   .hero h2 {
     font-size: 20px;
   }
+  
   .hero {
     padding: 70px 20px;
   }
+
   .project-description,
   .bio-section {
     text-align: center;
