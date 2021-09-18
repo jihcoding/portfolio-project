@@ -180,7 +180,7 @@ footer h4 {
 
 .bio-section img {
   border-radius: 50px;
-  max-width: 400px;
+  max-width: 380px;
   padding: 40px 30px;
   margin-left: 34px;
 }
@@ -291,4 +291,10 @@ footer h4 {
     padding: 0;
     margin-left: 0;
   }
+  .bio-section img {
+  border-radius: 50px;
+  max-width: 300px;
+  padding: 40px 30px;
+  margin-left: 0;
+}
 }
