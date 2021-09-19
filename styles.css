@@ -20,7 +20,7 @@ body {
 }
 
 .navbar-brand img {
-  max-width: 100px;
+  max-width: 90px;
 }
 
 h1,
@@ -115,39 +115,6 @@ p {
   text-decoration: none;
 }
 
-/*       FOOTER SECTION    */
-
-footer .contact {
-  background: var(--branding-color);
-  border-radius: 10px;
-  margin-top: 71px;
-  margin: 55px;
-  padding: 28px 72px;
-  color: var(--font-color);
-}
-
-footer h4 {
-  font-size: 47px;
-}
-
-.connect-links {
-  margin-top: 55px;
-}
-
-.social-links a {
-  margin: 30px 25px;
-  background: var(--secondary-color);
-  color: white;
-  padding: 8px 14px;
-  font-size: 25px;
-  border-radius: 30%;
-}
-
-.source {
-  text-align: center;
-  font-size: 14px;
-  margin-top: 40px;
-}
 
 /*       BiO PAGE       */
 
@@ -262,6 +229,41 @@ footer h4 {
   font-size: 18px;
   border-radius: 10px;
   padding: 15px 45px;
+}
+
+/*       FOOTER SECTION    */
+
+footer .contact {
+  background: var(--branding-color);
+  border-radius: 10px;
+  margin-top: 71px;
+  margin: 55px;
+  padding: 28px 72px;
+  color: var(--font-color);
+}
+
+footer h4 {
+  font-size: 47px;
+}
+
+.connect-links {
+  margin-top: 55px;
+}
+
+.social-links a {
+  margin: 30px 25px;
+  background: var(--secondary-color);
+  color: white;
+  padding: 8px 14px;
+  font-size: 25px;
+  border-radius: 30%;
+}
+
+.source {
+  text-align: center;
+  font-size: 14px;
+  padding: 35px 0;
+ 
 }
 
 /*       MEDIA RESPONSIVE SECTION      */
